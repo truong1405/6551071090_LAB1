@@ -1,10 +1,4 @@
-/*--------------------------------------------------------------------------------------------------
-  Ogani Template - Custom Style Sheet (Recreated for Kitchen Utensils Theme)
-  --------------------------------------------------------------------------------------------------*/
 
-/*---------------------
-  1. Default CSS & Base
------------------------*/
 body {
     font-family: 'Cairo', sans-serif;
     margin: 0;
@@ -124,7 +118,7 @@ ul, ol {
 }
 .header__menu ul li:hover > a,
 .header__menu ul li.active > a {
-    color: #7fad39; /* MÀU CHỦ ĐẠO */
+    color: #7fad39;
 }
 .header__menu .header__menu__dropdown {
     position: absolute;
@@ -156,7 +150,7 @@ ul, ol {
 .header__cart ul li a span {
     height: 15px;
     width: 15px;
-    background: #7fad39; /* MÀU CHỦ ĐẠO */
+    background: #7fad39;
     font-size: 10px;
     color: #ffffff;
     line-height: 15px;
@@ -219,7 +213,7 @@ ul, ol {
     transition: all 0.3s;
 }
 .hero__categories ul li a:hover {
-    color: #7fad39; /* MÀU CHỦ ĐẠO */
+    color: #7fad39;
 }
 .hero__item {
     height: 430px;
@@ -229,7 +223,7 @@ ul, ol {
     margin-top: 15px;
 }
 .hero__text span {
-    color: #7fad39; /* MÀU CHỦ ĐẠO */
+    color: #7fad39;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
@@ -396,4 +390,5 @@ ul, ol {
 .footer__copyright__text p a {
     color: #7fad39; /* MÀU CHỦ ĐẠO */
     font-weight: 700;
+
 }
