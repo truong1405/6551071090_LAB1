@@ -1,8 +1,4 @@
-/*
-  File: main.js
-  LƯU Ý: Script này cần các thư viện bên ngoài (jQuery, MixitUp, Owl Carousel, v.v.)
-  để chạy đúng chức năng.
-*/
+
 (function ($) {
     "use strict";
 
@@ -81,7 +77,5 @@
         }
         $button.parent().find('input').val(newVal);
     });
-
-    // ... (Thêm các script khác cho nice-select, range slider, v.v.)
 
 })(jQuery);
