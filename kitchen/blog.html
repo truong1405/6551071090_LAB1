@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - KitchenPro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-utensils"></i>
+                        <span>Kitchen<span class="logo-highlight">Pro</span></span>
+                    </a>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                        <li><a href="blog.html" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm bài viết...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="#" id="login-btn" class="btn-login">
+                            <i class="fas fa-user"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                        <a href="#" class="wishlist-btn">
+                            <i class="fas fa-heart"></i>
+                            <span class="wishlist-count">0</span>
+                        </a>
+                        <a href="#" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                    
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>Blog Ẩm Thực & Nhà Bếp</h1>
+            <p>Chia sẻ kiến thức, mẹo vặt và xu hướng mới trong thế giới ẩm thực</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-page">
+        <div class="container">
+            <div class="blog-categories">
+                <button class="blog-cat-btn active" data-category="all">Tất cả</button>
+                <button class="blog-cat-btn" data-category="tips">Mẹo vặt nhà bếp</button>
+                <button class="blog-cat-btn" data-category="recipes">Công thức nấu ăn</button>
+                <button class="blog-cat-btn" data-category="tools">Đánh giá dụng cụ</button>
+                <button class="blog-cat-btn" data-category="trends">Xu hướng ẩm thực</button>
+            </div>
+            
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog posts will be loaded by JavaScript -->
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <h2>Đăng Ký Nhận Tin</h2>
+                    <p>Nhận thông tin về sản phẩm mới, công thức nấu ăn và khuyến mãi đặc biệt</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Nhập email của bạn" required>
+                        <button type="submit" class="btn-primary">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>KitchenPro</h3>
+                    <p>Chuyên cung cấp dụng cụ làm bếp chất lượng cao, giúp công việc nấu nướng trở nên dễ dàng và thú vị hơn.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="shop.html">Cửa hàng</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Danh mục</h3>
+                    <ul>
+                        <li><a href="#" data-category="knives">Dao & Kéo</a></li>
+                        <li><a href="#" data-category="pots">Nồi & Chảo</a></li>
+                        <li><a href="#" data-category="utensils">Dụng Cụ Phụ</a></li>
+                        <li><a href="#" data-category="bake">Đồ Làm Bánh</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> (028) 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@kitchenpro.vn</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 KitchenPro. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Đăng Nhập</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn-primary">Đăng nhập</button>
+                <p class="signup-link">Chưa có tài khoản? <a href="#" id="signup-link">Đăng ký ngay</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Giỏ Hàng</h3>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be loaded by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Tổng cộng:</span>
+                <span class="total-price">0đ</span>
+            </div>
+            <button class="btn-primary btn-checkout">Thanh Toán</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng - KitchenPro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-utensils"></i>
+                        <span>Kitchen<span class="logo-highlight">Pro</span></span>
+                    </a>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="shop.html" class="active"><i class="fas fa-store"></i> Shop</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm dụng cụ nhà bếp...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="#" id="login-btn" class="btn-login">
+                            <i class="fas fa-user"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                        <a href="#" class="wishlist-btn">
+                            <i class="fas fa-heart"></i>
+                            <span class="wishlist-count">0</span>
+                        </a>
+                        <a href="#" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                    
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <h1>Cửa Hàng Dụng Cụ Nhà Bếp</h1>
+            <p>Khám phá bộ sưu tập dụng cụ nhà bếp đa dạng và chất lượng</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-filters">
+                <div class="filter-categories">
+                    <select id="category-filter">
+                        <option value="all">Tất cả danh mục</option>
+                        <option value="knives">Dao & Kéo</option>
+                        <option value="pots">Nồi & Chảo</option>
+                        <option value="utensils">Dụng Cụ Phụ</option>
+                        <option value="bake">Đồ Làm Bánh</option>
+                        <option value="storage">Đồ Đựng & Bảo Quản</option>
+                    </select>
+                </div>
+                
+                <div class="filter-sort">
+                    <select id="sort-filter">
+                        <option value="default">Sắp xếp mặc định</option>
+                        <option value="price-low">Giá: Thấp đến Cao</option>
+                        <option value="price-high">Giá: Cao đến Thấp</option>
+                        <option value="name-asc">Tên: A-Z</option>
+                        <option value="name-desc">Tên: Z-A</option>
+                    </select>
+                </div>
+                
+                <div class="filter-search">
+                    <input type="text" id="shop-search" placeholder="Tìm kiếm sản phẩm...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="shop-products">
+                <div class="products-grid" id="shop-products-grid">
+                    <!-- Products will be loaded by JavaScript -->
+                </div>
+                
+                <div class="pagination">
+                    <button class="prev-page" disabled><i class="fas fa-chevron-left"></i> Trước</button>
+                    <span class="page-info">Trang <span id="current-page">1</span> / <span id="total-pages">1</span></span>
+                    <button class="next-page">Sau <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Brands -->
+    <section class="featured-brands">
+        <div class="container">
+            <h2 class="section-title">Thương Hiệu Nổi Bật</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-utensil-spoon"></i>
+                    </div>
+                    <h3>KitchenMaster</h3>
+                    <p>Dụng cụ cao cấp từ Đức</p>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-blender"></i>
+                    </div>
+                    <h3>ChefPro</h3>
+                    <p>Chuyên gia ẩm thực</p>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <h3>HomeCook</h3>
+                    <p>Cho gia đình Việt</p>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <h3>ThermoSafe</h3>
+                    <p>An toàn nhiệt độ cao</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>KitchenPro</h3>
+                    <p>Chuyên cung cấp dụng cụ làm bếp chất lượng cao, giúp công việc nấu nướng trở nên dễ dàng và thú vị hơn.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="shop.html">Cửa hàng</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Danh mục</h3>
+                    <ul>
+                        <li><a href="#" data-category="knives">Dao & Kéo</a></li>
+                        <li><a href="#" data-category="pots">Nồi & Chảo</a></li>
+                        <li><a href="#" data-category="utensils">Dụng Cụ Phụ</a></li>
+                        <li><a href="#" data-category="bake">Đồ Làm Bánh</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> (028) 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@kitchenpro.vn</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 KitchenPro. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Đăng Nhập</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn-primary">Đăng nhập</button>
+                <p class="signup-link">Chưa có tài khoản? <a href="#" id="signup-link">Đăng ký ngay</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Giỏ Hàng</h3>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be loaded by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Tổng cộng:</span>
+                <span class="total-price">0đ</span>
+            </div>
+            <button class="btn-primary btn-checkout">Thanh Toán</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

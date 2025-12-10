@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - KitchenPro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-utensils"></i>
+                        <span>Kitchen<span class="logo-highlight">Pro</span></span>
+                    </a>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm dụng cụ nhà bếp...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="#" id="login-btn" class="btn-login">
+                            <i class="fas fa-user"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                        <a href="#" class="wishlist-btn">
+                            <i class="fas fa-heart"></i>
+                            <span class="wishlist-count">0</span>
+                        </a>
+                        <a href="#" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                    
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <div class="container">
+            <h1>Liên Hệ Với Chúng Tôi</h1>
+            <p>Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Thông Tin Liên Hệ</h2>
+                    <p>Nếu bạn có bất kỳ câu hỏi nào về sản phẩm, đơn hàng hoặc cần tư vấn, đừng ngần ngại liên hệ với chúng tôi.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Địa chỉ</h4>
+                                <p>123 Nguyễn Văn Linh, Quận 7, TP.Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Số điện thoại</h4>
+                                <p>(028) 1234 5678</p>
+                                <p>Hotline: 0909 123 456</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@kitchenpro.vn</p>
+                                <p>support@kitchenpro.vn</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Giờ làm việc</h4>
+                                <p>Thứ 2 - Thứ 6: 8:00 - 18:00</p>
+                                <p>Thứ 7: 8:00 - 12:00</p>
+                                <p>Chủ nhật: Nghỉ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Theo dõi chúng tôi</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Gửi Tin Nhắn</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Họ và tên *</label>
+                            <input type="text" id="contact-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-phone">Số điện thoại</label>
+                            <input type="tel" id="contact-phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Chủ đề</label>
+                            <select id="contact-subject">
+                                <option value="general">Thông tin chung</option>
+                                <option value="product">Hỏi về sản phẩm</option>
+                                <option value="order">Hỏi về đơn hàng</option>
+                                <option value="warranty">Bảo hành</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Nội dung *</label>
+                            <textarea id="contact-message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="contact-map">
+                <h2>Vị Trí Của Chúng Tôi</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Bản đồ hiển thị vị trí cửa hàng KitchenPro</p>
+                        <p>123 Nguyễn Văn Linh, Quận 7, TP.HCM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ -->
+            <div class="contact-faq">
+                <h2>Câu Hỏi Thường Gặp</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Làm thế nào để đặt hàng?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Bạn có thể đặt hàng trực tiếp trên website hoặc gọi điện đến hotline 0909 123 456. Chúng tôi sẽ xác nhận đơn hàng trong vòng 24 giờ.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Thời gian giao hàng là bao lâu?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Đối với khu vực TP.HCM: 1-2 ngày làm việc. Các tỉnh thành khác: 3-7 ngày làm việc tùy vào địa điểm. Miễn phí vận chuyển cho đơn hàng trên 500.000đ.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Chính sách đổi trả như thế nào?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Chúng tôi chấp nhận đổi trả trong vòng 30 ngày nếu sản phẩm còn nguyên vẹn, chưa qua sử dụng và còn đầy đủ hóa đơn, bao bì.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Sản phẩm có bảo hành không?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tất cả sản phẩm đều được bảo hành từ 6 tháng đến 5 năm tùy loại. Chi tiết bảo hành được ghi rõ trên phiếu bảo hành đi kèm sản phẩm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>KitchenPro</h3>
+                    <p>Chuyên cung cấp dụng cụ làm bếp chất lượng cao, giúp công việc nấu nướng trở nên dễ dàng và thú vị hơn.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="shop.html">Cửa hàng</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Danh mục</h3>
+                    <ul>
+                        <li><a href="#" data-category="knives">Dao & Kéo</a></li>
+                        <li><a href="#" data-category="pots">Nồi & Chảo</a></li>
+                        <li><a href="#" data-category="utensils">Dụng Cụ Phụ</a></li>
+                        <li><a href="#" data-category="bake">Đồ Làm Bánh</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> (028) 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@kitchenpro.vn</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 KitchenPro. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Đăng Nhập</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn-primary">Đăng nhập</button>
+                <p class="signup-link">Chưa có tài khoản? <a href="#" id="signup-link">Đăng ký ngay</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Giỏ Hàng</h3>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be loaded by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Tổng cộng:</span>
+                <span class="total-price">0đ</span>
+            </div>
+            <button class="btn-primary btn-checkout">Thanh Toán</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm - KitchenPro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (giống trang chủ) -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-utensils"></i>
+                        <span>Kitchen<span class="logo-highlight">Pro</span></span>
+                    </a>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm dụng cụ nhà bếp...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="#" id="login-btn" class="btn-login">
+                            <i class="fas fa-user"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                        <a href="#" class="wishlist-btn">
+                            <i class="fas fa-heart"></i>
+                            <span class="wishlist-count">0</span>
+                        </a>
+                        <a href="#" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                    
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-content">
+                <div class="product-detail-images">
+                    <div class="main-image">
+                        <img id="main-product-image" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Bộ Dao Nhà Bếp Cao Cấp">
+                    </div>
+                </div>
+                
+                <div class="product-detail-info">
+                    <h1 id="product-name">Bộ Dao Nhà Bếp Cao Cấp</h1>
+                    <div class="product-price" id="product-price">450.000đ</div>
+                    <div class="product-category" id="product-category">Dao & Kéo</div>
+                    
+                    <div class="product-description">
+                        <h3>Mô tả sản phẩm</h3>
+                        <p id="product-description-text">Bộ dao nhà bếp 6 món làm từ thép không gỉ cao cấp, sắc bén và bền bỉ. Thiết kế tay cầm ergonomic giúp cầm nắm thoải mái, không trơn trượt khi sử dụng. Sản phẩm phù hợp cho mọi công việc nhà bếp từ cắt, thái, tỉa hoa quả đến chế biến thịt cá.</p>
+                        
+                        <h4>Đặc điểm nổi bật:</h4>
+                        <ul>
+                            <li>Chất liệu thép không gỉ cao cấp, chống gỉ sét</li>
+                            <li>Lưỡi dao sắc bén, cắt thực phẩm dễ dàng</li>
+                            <li>Tay cầm bằng nhựa cao cấp, chống trơn</li>
+                            <li>Bao gồm: dao đầu bếp, dao thái, dao gọt, dao tỉa, dao chả, kéo</li>
+                            <li>Bảo hành 5 năm</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-actions-detail">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" class="qty-input" value="1" min="1">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        
+                        <button class="btn-primary add-to-cart-detail">
+                            <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                        </button>
+                        
+                        <button class="btn-secondary add-to-wishlist-detail">
+                            <i class="far fa-heart"></i> Yêu thích
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Miễn phí vận chuyển cho đơn > 500.000đ</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Đổi trả trong 30 ngày</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Bảo hành 5 năm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>Sản phẩm liên quan</h2>
+                <div class="related-products-grid">
+                    <!-- Sản phẩm liên quan sẽ được tải bằng JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (giống trang chủ) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>KitchenPro</h3>
+                    <p>Chuyên cung cấp dụng cụ làm bếp chất lượng cao, giúp công việc nấu nướng trở nên dễ dàng và thú vị hơn.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="shop.html">Cửa hàng</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Danh mục</h3>
+                    <ul>
+                        <li><a href="#" data-category="knives">Dao & Kéo</a></li>
+                        <li><a href="#" data-category="pots">Nồi & Chảo</a></li>
+                        <li><a href="#" data-category="utensils">Dụng Cụ Phụ</a></li>
+                        <li><a href="#" data-category="bake">Đồ Làm Bánh</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> (028) 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@kitchenpro.vn</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 KitchenPro. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // Script xử lý trang chi tiết sản phẩm
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy ID sản phẩm từ URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            
+            // Dữ liệu sản phẩm mẫu
+            const productsData = [
+                {
+                    id: 1,
+                    name: "Bộ Dao Nhà Bếp Cao Cấp",
+                    category: "knives",
+                    price: 450000,
+                    image: "https://salt.tikicdn.com/cache/w1200/ts/product/c3/d3/0a/68154b413838199fd24203a9a7a6a8e9.jpg",
+                    description: "Bộ dao nhà bếp 6 món làm từ thép không gỉ, sắc bén và bền bỉ. Thiết kế tay cầm ergonomic giúp cầm nắm thoải mái, không trơn trượt khi sử dụng."
+                },
+{
+        id: 2,
+        name: "Nồi Inox 3 Lớp",
+        category: "pots",
+        price: 780000,
+        image: "https://junger.vn/medias/jungerb/images/2024/noi-inox-co-doc-khong-1.jpg",
+        description: "Nồi inox 3 lớp dày, chống dính, dẫn nhiệt đều.",
+    },
+    {
+        id: 3,
+        name: "Chảo Chống Dính Đáy Từ",
+        category: "pots",
+        price: 320000,
+        image: "https://cdn.tgdd.vn/Products/Images/2403/326661/chao-nhom-chong-dinh-van-da-day-tu-20-cm-sunhouse-sh20g-140624-104112-600x600.jpg",
+        description: "Chảo chống dính đáy từ, phù hợp với mọi loại bếp.",
+    },
+    {
+        id: 4,
+        name: "Kéo Cắt Thực Phẩm",
+        category: "knives",
+        price: 150000,
+        image: "https://webgiadung.com/storage/webgiadungcom/1385/3kfsig8p.jpg",
+        description: "Kéo cắt thực phẩm đa năng, lưỡi sắc, cầm êm tay.",
+    },
+    {
+        id: 5,
+        name: "Bộ Thìa Gỗ 5 Món",
+        category: "utensils",
+        price: 120000,
+        image: "https://image.made-in-china.com/202f0j00RHUocjKEJfqh/Set-of-5-Handmade-by-Natural-Teak-Cooking-Wooden-Kitchen-Spatula-Utensils-for-Wholesale.webp",
+        description: "Bộ thìa gỗ tự nhiên, an toàn cho chảo chống dính.",
+    },
+    {
+        id: 6,
+        name: "Khuôn Làm Bánh Silicon",
+        category: "bake",
+        price: 95000,
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU40M9ZtjZT9eGM-osLM8zaY5S3J9kCi-QJQ&s",
+        description: "Bộ khuôn làm bánh silicon chịu nhiệt cao, dễ tách bánh.",
+    },
+    {
+        id: 7,
+        name: "Hộp Đựng Thực Phẩm Thủy Tinh",
+        category: "storage",
+        price: 280000,
+        image: "https://cdn.tgdd.vn/Products/Images/4929/321033/bo-3-hop-dung-thuc-pham-thuy-tinh-delites-hs301rc-600x600.jpg",
+        description: "Bộ hộp đựng thực phẩm thủy tinh, an toàn và dễ vệ sinh.",
+
+    },
+    {
+        id: 8,
+        name: "Máy Đánh Trứng Cầm Tay",
+        category: "utensils",
+        price: 350000,
+        image: "https://viettuantea.vn/wp-content/uploads/2020/12/7-May-Danh-Trung-Cam-Tay-Philips-HR3705-300W-1.jpg",
+        description: "Máy đánh trứng cầm tay 5 tốc độ, mạnh mẽ và tiện lợi.",
+    }
+            ];
+            
+            // Tìm sản phẩm theo ID
+            const product = productsData.find(p => p.id == productId) || productsData[0];
+            
+            // Hiển thị thông tin sản phẩm
+            document.getElementById('product-name').textContent = product.name;
+            document.getElementById('product-price').textContent = formatPrice(product.price);
+            document.getElementById('product-category').textContent = getCategoryName(product.category);
+            document.getElementById('product-description-text').textContent = product.description;
+            document.getElementById('main-product-image').src = product.image;
+            
+            // Xử lý nút thay đổi số lượng
+            const minusBtn = document.querySelector('.qty-btn.minus');
+            const plusBtn = document.querySelector('.qty-btn.plus');
+            const qtyInput = document.querySelector('.qty-input');
+            
+            minusBtn.addEventListener('click', function() {
+                if (parseInt(qtyInput.value) > 1) {
+                    qtyInput.value = parseInt(qtyInput.value) - 1;
+                }
+            });
+            
+            plusBtn.addEventListener('click', function() {
+                qtyInput.value = parseInt(qtyInput.value) + 1;
+            });
+            
+            // Xử lý nút thêm vào giỏ hàng
+            const addToCartBtn = document.querySelector('.add-to-cart-detail');
+            addToCartBtn.addEventListener('click', function() {
+                const quantity = parseInt(qtyInput.value);
+                
+                // Thêm sản phẩm vào giỏ hàng
+                for (let i = 0; i < quantity; i++) {
+                    addToCart(product.id);
+                }
+                
+                alert(`Đã thêm ${quantity} sản phẩm vào giỏ hàng`);
+            });
+            
+            // Xử lý nút yêu thích
+            const addToWishlistBtn = document.querySelector('.add-to-wishlist-detail');
+            addToWishlistBtn.addEventListener('click', function() {
+                toggleWishlist(product.id);
+            });
+            
+            // Hiển thị sản phẩm liên quan
+            displayRelatedProducts(product.category, product.id);
+            
+            // Hàm hiển thị sản phẩm liên quan
+            function displayRelatedProducts(category, currentProductId) {
+                const relatedProductsGrid = document.querySelector('.related-products-grid');
+                const relatedProducts = productsData.filter(p => p.category === category && p.id != currentProductId).slice(0, 4);
+                
+                if (relatedProducts.length === 0) {
+                    document.querySelector('.related-products').style.display = 'none';
+                    return;
+                }
+                
+                relatedProducts.forEach(product => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'product-card';
+                    productCard.innerHTML = `
+                        <div class="product-image">
+                            <img src="${product.image}" alt="${product.name}">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">${getCategoryName(product.category)}</span>
+                            <h3 class="product-title">${product.name}</h3>
+                            <div class="product-price">${formatPrice(product.price)}</div>
+                            <div class="product-actions">
+                                <button class="add-to-wishlist" data-id="${product.id}">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="add-to-cart" data-id="${product.id}">
+                                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Thêm sự kiện click để chuyển đến trang chi tiết
+                    productCard.addEventListener('click', function() {
+                        window.location.href = `product-detail.html?id=${product.id}`;
+                    });
+                    
+                    relatedProductsGrid.appendChild(productCard);
+                });
+            }
+            
+            // Hàm định dạng giá
+            function formatPrice(price) {
+                return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + 'đ';
+            }
+            
+            // Hàm lấy tên danh mục
+            function getCategoryName(categoryKey) {
+                const categories = {
+                    'knives': 'Dao & Kéo',
+                    'pots': 'Nồi & Chảo',
+                    'utensils': 'Dụng Cụ Phụ',
+                    'bake': 'Đồ Làm Bánh',
+                    'storage': 'Đồ Đựng & Bảo Quản'
+                };
+                
+                return categories[categoryKey] || categoryKey;
+            }
+        });
+    </script>
+</body>
+</html>
